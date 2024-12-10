@@ -43,6 +43,20 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Adjust as needed */
+    }
+    .carousel-image {
+        max-width: 100%;
+        max-height: 500px; /* Adjust as needed */
+        object-fit: cover;
+    }
+</style>
 </head>
 <body>
 
@@ -68,7 +82,7 @@
 
              <!-- Demo Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://huggingface.co/spaces/liux-cyber/RSUniVLM"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
@@ -221,24 +235,24 @@
       <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Quantitative Results</h2>
       </div>
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel" class="carousel results-carousel carousel-container">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/1.png" alt="structure" />
+        <img src="static/images/1.png" alt="structure"  class="carousel-image"/>
         <!-- <h2 class="subtitle has-text-centered">
           Visual Grounding
         </h2> -->
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/2.png" alt="structure" />
+        <img src="static/images/2.png" alt="structure"  class="carousel-image"/>
         <!-- <h2 class="subtitle has-text-centered">
           Semantic Segmentation
         </h2> -->
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/3.png" alt="structure" />
+        <img src="static/images/3.png" alt="structure"  class="carousel-image"/>
         <!-- <h2 class="subtitle has-text-centered">
           Change Captioning & Change Detection
        </h2> -->
@@ -246,21 +260,21 @@
 
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/4.png" alt="structure" />
+      <img src="static/images/4.png" alt="structure"  class="carousel-image"/>
       <!-- <h2 class="subtitle has-text-centered">
         Visual Grounding
       </h2> -->
     </div>
     <div class="item">
       <!-- Your image here -->
-      <img src="static/images/5.png" alt="structure" />
+      <img src="static/images/5.png" alt="structure"  class="carousel-image"/>
       <!-- <h2 class="subtitle has-text-centered">
         Semantic Segmentation
       </h2> -->
     </div>
     <div class="item">
       <!-- Your image here -->
-      <img src="static/images/6.png" alt="structure" />
+      <img src="static/images/6.png" alt="structure"  class="carousel-image"/>
       <!-- <h2 class="subtitle has-text-centered">
         Change Captioning & Change Detection
      </h2> -->
